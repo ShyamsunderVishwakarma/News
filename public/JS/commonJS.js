@@ -8,9 +8,9 @@ $(document).ready(function(){
 
 	var timeInterval = 60*1000;
 
-	// window.setInterval(function(){
- //  		getLatestNews();
-	// }, timeInterval);
+	window.setInterval(function(){
+  		getLatestNews();
+	}, timeInterval);
 	
 })
 
