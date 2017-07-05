@@ -1,0 +1,135 @@
+
+    ul,li
+    {
+      padding: 0;
+      margin: 0;
+    }
+    .header
+    {
+      text-align: center;
+      background: #00aced;
+      color: white;
+      padding-left: 39px;
+      padding-right: 77px;
+      border-radius: 6px;
+    }
+    .header h1
+    {
+      color: white;
+    }
+    .data-div
+    {
+      border: 2px solid #00aced;
+      border-radius: 4px;
+      overflow:auto;
+      clear: both;
+      padding: 10px;
+      height: 650px;
+    }
+    .data-div ul
+    {
+      list-style-type: none;
+      overflow: hidden;
+    }
+    
+
+   .main-wrapper 
+   {
+      width: 89%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .data-div ul li
+    {
+      float: left;
+      width: 18%;
+      border: 1px solid black;
+      padding: 10px;
+      min-height: 150px;
+    }
+    .data-div ul li:nth-child(odd)
+    {
+      text-align: center;
+    }
+    .data-div ul li:nth-child(even)
+    {
+      border-left: none;
+      text-align: center;
+    }
+   
+    .btnRefreshText
+    {
+       background-color: #4CAF50; /* Green */
+       border: none;
+       color: white;
+       padding: 12px 19px;
+       text-align: center;
+       text-decoration: none; 
+       display: inline-block;
+       font-size: 16px;
+       border-radius: 10px;
+    }
+    .refreshArea
+    {
+      text-align: right;
+      float: right;
+      padding-top: 14px;
+      width: 18%;
+      position: relative;
+    }
+
+    .companyHeader
+    {
+      float:left;
+    }
+    .refresh-img-div
+    {
+      float: left;
+      position: absolute;
+      left: -45px;
+    }
+   
+   .newsheaderImg{
+    width: 186px;
+    min-height: 125px;  
+   }
+
+    .main-wrapper .refreshArea .lastUpdateTime
+    {
+      color: red;
+      font-size: 14px;
+      font-family: arial;
+      float:left;
+    }
+
+    .refreshImage
+    {
+      width:35px;
+      height: 40px
+    }
+
+    .data-div-header ul
+    {
+      list-style-type: none;
+      overflow: hidden;
+    }
+    .data-div-header
+    {      
+      border: 1px solid black;   
+      text-align: center;
+
+      border-radius: 4px;
+      overflow:auto;
+      clear: both;
+      
+    }
+    .data-div-header ul
+  {
+    list-style-type: none;
+    border: 1px solid red;  
+  }
+  .data-div-header ul li
+  {
+    float: left;
+    width: 20%;
+  }

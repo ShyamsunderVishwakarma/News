@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>USA Today</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="/static/CSS/main.css" type="text/css">
+ <script src="../static/JS/commonJS.js"></script>
+</head>
+<body>
+
+<div class="main-wrapper">
+	
+	<div class="companyHeader">
+		<div class="header">
+          <h1>USA Today</h1>
+        </div>  
+	</div>
+
+	 <div class ="refreshArea">
+	<div class="refresh-img-div"> <img id="refreshImage" class="refreshImage" src="/static/images/ajax-loader.gif"/></div>
+	 <div class="lastUpdateTime" id="lastUpdateTime"></div>
+	 <button name="btnRefreshText" id="btnRefreshText" class="btnRefreshText" >Refresh</button>
+	 </div>
+
+	 <div class="data-div-header">
+	 	<ul class="data-ul-header">
+	 		<li>Title</li>
+	 		<li>Description</li>
+	 		<li>More Detail</li>
+	 		<li>Image</li>
+	 		<li>Pusblised on</li>
+	 	</ul>
+	 </div>
+
+	 <div class="data-div">
+	 	<ul class="data-ul">
+
+	 	</ul>
+	 </div>
+
+</div>
+<div class="modal" id="model"></div>
+</body>
+</html>
