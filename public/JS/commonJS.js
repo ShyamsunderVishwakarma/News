@@ -16,13 +16,11 @@ $(document).ready(function(){
 
 function getLatestNews()
 {
-	debugger;
 	$("#refreshImage").show()
 	$.ajax({
 			url:'http://'+window.location.host+'/news',
 			type:'get',
-			success :function(data,textStatus, xhr){
-				debugger;
+			success :function(data){
 				$("#refreshImage").hide();
 				var result = JSON.parse(data);
 				$('.data-ul').html('');

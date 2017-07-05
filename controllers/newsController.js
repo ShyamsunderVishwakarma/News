@@ -15,7 +15,7 @@ exports.getNews = function(req,res)
 		if(err) throw err
 
 		console.log("In refresh call type");
-		res.send(body);
+		res.send(body).status(200);
 	}
 
 	request(options,callBack)
