@@ -8,9 +8,9 @@ $(document).ready(function(){
 
 	var timeInterval = 60*1000;
 
-	window.setInterval(function(){
-  		getLatestNews();
-	}, timeInterval);
+	// window.setInterval(function(){
+ //  		getLatestNews();
+	// }, timeInterval);
 	
 })
 
@@ -29,11 +29,11 @@ function getLatestNews()
 				{
 					var publishedDate = result.articles[i].publishedAt;
 
-					$('.data-ul').append("<li>"+result.articles[i].title+"</li>"+
-										"<li>"+result.articles[i].description+"</li>"+
-										"<li><a href='"+result.articles[i].url+"' target='_blank'>Browse link</a></li>"+
-										"<li><img class='newsheaderImg' src='"+result.articles[i].urlToImage+"'/></li>"+
-										"<li>"+publishedDate.replace(/[TZ]/g,' ')+"</li>");
+					$('.data-ul').append("<li><div class='news-img'><img src='"+result.articles[i].urlToImage+"'/></div>"+
+											"<div class='desc-news'><div class='first-row-div'><div class='title-div'><a target='_blank' href='"+result.articles[i].url+"'>"+result.articles[i].title+"</a></div>"+
+											"<div class='published-div'>"+publishedDate.replace(/[TZ]/g,' ')+"</div></div>"+
+											"<div class='description-div'>"+result.articles[i].description+"</div>"+
+											"<div class='author-div'>-"+result.articles[i].author+"</div></div></li>");
 				}
 				
 				$("#lastUpdateTime").html("<div><div>Last Updated:</div>"+new Date().toLocaleString()+"</div>")
